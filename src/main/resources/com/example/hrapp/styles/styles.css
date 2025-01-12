@@ -1,0 +1,40 @@
+/* Style for the entire side navigation bar */
+.side-nav {
+    -fx-background-color: #284b63; /* Dark grey background */
+    -fx-padding: 20;              /* Inner padding for the VBox */
+    -fx-spacing: 1;              /* Space between elements */
+}
+
+/* Style for each navigation item */
+.nav-item {
+    -fx-background-color: #284b63; /* Dark grey background */
+    -fx-font-size: 16px;          /* Font size */
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10 20;           /* Padding inside each item */
+    -fx-background-radius: 5;     /* Rounded corners */
+    -fx-cursor: hand;             /* Pointer cursor on hover */
+    -fx-border-width: 0;
+}
+
+/* Hover effect for navigation items */
+.nav-item:hover {
+    -fx-background-color:  #284b63; /* Slightly lighter grey on hover */
+    -fx-text-fill: #FFFFFF;       /* Bright white text on hover */
+}
+
+/* Selected or active navigation item */
+.nav-item:focused {
+    -fx-background-color: #1E88E5; /* Blue background for active item */
+    -fx-text-fill: #FFFFFF;        /* White text for active item */
+}
+
+/* Style for profile image */
+.profile-image {
+    /*-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0.5, 0, 2); !* Shadow effect *!*/
+    -fx-background-radius: 50%; /* Rounded background */
+    -fx-border-radius: 50%;    /* Rounded border */
+    -fx-border-color: #90A4AE; /* Light grey border */
+    -fx-border-width: 3;       /* Border thickness */
+    -fx-clip-shape: "circle";  /* Clip the image into a circle shape */
+}
+

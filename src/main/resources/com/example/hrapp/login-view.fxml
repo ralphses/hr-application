@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hrapp.controllers.LoginController">
+   <children>
+      <VBox layoutX="229.0" layoutY="67.0" prefHeight="501.0" prefWidth="630.0" spacing="3.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="129.0" prefWidth="603.0" style="-fx-background-color: #d9d9d9;">
+               <children>
+                  <ImageView fitHeight="144.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/logo-smart-hr.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="40.0" prefWidth="703.0">
+               <children>
+                  <Text fill="#284b63" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back!">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="143.0" prefHeight="72.0" prefWidth="703.0">
+               <children>
+                  <TextField fx:id="username" prefHeight="50.0" prefWidth="569.0" promptText="Username">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="199.0" prefHeight="72.0" prefWidth="703.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <PasswordField fx:id="passcode" prefHeight="50.0" prefWidth="526.0" promptText="Passcode">
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </VBox>
+            <HBox prefHeight="68.0" prefWidth="630.0" spacing="100.0">
+               <padding>
+                  <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+               </padding>
+               <children>
+                  <Button fx:id="createAccountBtn" mnemonicParsing="false" onAction="#createAccount" prefHeight="55.0" prefWidth="297.0" style="-fx-background-color: transparent;" text="Don't have account? Create One" textFill="#284b63">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="authenticateBtn" mnemonicParsing="false" onAction="#authenticate" prefHeight="43.0" prefWidth="187.0" style="-fx-background-color: #284b63; -fx-text-fill: white;" text="Authenticate">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="350.0" prefHeight="68.0" prefWidth="630.0">
+               <padding>
+                  <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+               </padding>
+               <children>
+                  <Button fx:id="forgetPasscodeBtn" mnemonicParsing="false" onAction="#forgetPasscode" prefHeight="55.0" prefWidth="505.0" style="-fx-background-color: transparent;" text="If you have forgotten your passcode, reset it HERE" textFill="#284b63">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
